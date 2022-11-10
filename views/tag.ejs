@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Etiqueta</title>
+
+    <link rel="stylesheet" type="text/css" href="/style/tag.css">
+    
+</head>
+<body>
+    
+    <div class="container"> 
+        <a href="/card" >Cartão Boas-Vindas</a>  
+      
+        <% if (dataTag.length > 0) { %>
+            <% dataTag.forEach(element => { %>
+                <section>
+                    <span class="item">
+                        <div class="img">
+                            <img src="/img/2bfv.png" alt="2° BFv">
+                        </div>
+                        <div>
+                            <p class="course"><%= element.course %></p>
+                            <p class="name"><%= element.name %></p>
+                        </div>
+                        <div class="img">
+                            <img src="/img/cieng.png" alt="CI Eng">
+                        </div>
+                    </span>
+                </section>
+            <%  }); %>
+        <% } %>
+
+    </div>
+</body>
+</html>

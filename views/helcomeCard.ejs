@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Etiqueta</title>
+
+    <link rel="stylesheet" type="text/css" href="/style/card.css">
+    
+</head>
+<body>
+    <a href="/" >Voltar ao Inicio</a>  
+    <div class="container">   
+      
+        <% if (dataCard.length > 0) { %>
+            <% dataCard.forEach(element => { %>
+                <section>
+                    <span class="item">
+                        <div class="topo">
+                            <p>CENTRO DE INSTRUÇÃO DE ENGENHARIA</p>
+                            <p class="name">Ao <%= element.name %></p>
+                        </div>
+                        <p class="text">
+                            O Instrutor-Chefe, Instrutores, Monitores do CI Eng e a Família Mauá têm o prazer e a satisfação em recebê-lo, desejando felicidades e sucesso proﬁssional em sua passagem pelo 2º B Fv, em particular, pelo CI Eng.
+                        </p>
+                        <div class="assinature">
+                            <p>DENIVALDO DE SOUSA SILVA - TC</p>
+                            <p>Instrutor Chefe do CI Eng</p>
+                        </div>
+                    </span>
+                    <img src="img/card.PNG" alt="">
+                </section>
+            <%  }); %>
+        <% } %>
+        
+    </div>
+</body>
+</html>
