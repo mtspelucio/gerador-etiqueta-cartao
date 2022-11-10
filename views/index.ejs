@@ -16,23 +16,20 @@
 
     <div class="header">
 
-        <div class="inner-header flex">
-            <div class="container">
-                <form action="/tag" method="POST" enctype="multipart/form-data">
-                    <!-- <img src="/img/cieng.png" alt="CI Eng"> -->
-                    <div>
-                        <label for="course">DIGITE O NOME DO CURSO / ESTÁGIO</label>
-                        <input type="text" name="course" id="course">
+        <div class="flex">
+            <form class="flex" action="/tag" method="POST" enctype="multipart/form-data">
+                <!-- <img src="/img/cieng.png" alt="CI Eng"> -->
 
-                        <label tabindex="0" for="file" class="input-file-label">ENVIAR MATRIZ</label>
-                        <input class="input-file" type="file" name="file" id="file">
-                        <p class="file-return"></p>
+                <label for="course">DIGITE O NOME DO CURSO / ESTÁGIO</label>
+                <input type="text" name="course" id="course">
 
-                        <button name="send">ENVIAR</button>
-                    </div>
-                </form>
+                <label tabindex="0" for="file" class="input-file-label">ENVIAR MATRIZ</label>
+                <input class="input-file" type="file" name="file" id="file">
+                <p class="file-return"></p>
 
-            </div>
+                <button name="send">ENVIAR</button>
+
+            </form>
         </div>
 
         <div class="contentSvg">
