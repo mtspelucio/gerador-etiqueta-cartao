@@ -6,7 +6,7 @@ body {
 }
 
 form {
-  width: 50%;
+  width: 40%;
   padding: 2rem 1rem;
   background: #ffffff;
   border-radius: 20px;
@@ -79,9 +79,28 @@ form p {
 
 /* media query */
 
-@media (min-width: 400px) {
+@media (max-width: 700px) {
   form {
     width: 80%;
+  }
+
+  form input[name="course"] {
+    width: 90%;
+  }
+
+  form label[for="course"],
+  form label[for="file"] {
+    font-size: 14px;
+  }
+
+  form label[for="file"] {
+    width: 90%;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+  form {
+    width: 60%;
   }
 
   form input[name="course"] {
